@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basalt</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.header .logo img {
+  height: 20px;
+  width: auto;
+  display: block;
+}
+
+.header nav a {
+  color: #000;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.content-section {
+  padding-top: 100px;
+  width: 90%;
+  max-width: 900px; 
+  margin: 0 auto;
+}
+
+.content-section > h2:first-of-type {
+    padding-top: 100px; 
+}
+
+.content-section h2 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-top: 0; 
+  margin-bottom: 20px;
+}
+
+.content-section h3 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.point-color {
+  color: #91CAFF;
+  font-weight: 600;
+}
+
+.content-section .sites-main-image {
+  display: block;
+  width: 300px;
+  height: auto;
+  margin: 0 auto 50px auto; 
+}
+
+.content-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 120px auto;
+}
+
+.spot-section {
+    padding-bottom: 150px;
+}
+
+.spot-section h2 {
+    margin-bottom: 80px; 
+}
+
+.spot-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 0; 
+}
+
+.content-section table {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto 120px auto; 
+  border-collapse: collapse; 
+  font-size: 16px; text-align: center; 
+  color: #fff; 
+  border: 1px solid #333; 
+}
+.content-section th, .content-section td {
+  border: 1px solid #333;
+  padding: 12px 8px; vertical-align: top;
+}
+.content-section th { 
+  background-color: #111; color: #fff; font-weight: 500;
+}
+.spot-section table img {
+  width: 100%;
+  max-width: 500px; 
+  height: auto; display: block; 
+  margin: 0 auto; 
+}
+
+.spot-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.spot-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.spot-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #999;
+    margin-top: auto;
+}
+
+.footer {
+  background-color: #d9d9d9;
+  color: #000;
+  text-align: center;
+  padding: 40px 0 20px;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-icon {
+  width: 70px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 14px;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #555;
+  margin-top: 10px;
+  border-top: 1px solid #bbb;
+  display: inline-block;
+  padding-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <a href="index.html">
+      <img src="Basalt_logo.png" alt="Basalt logo">
+    </a>
+  </div>
+  <nav>
+    <a href="origin.html">Origin</a>
+    <a href="sites.html">Sites</a>
+    <a href="use.html">Use</a>
+    <a href="future.html">Future</a>
+    <a href="basalt-code.html">Basalt code</a>
+  </nav>
+</header>
+
+<div class="content-section">
+    <section class="intro-section">
+        <h2>세상의 단면</h2>
+        <h3>현무암, 어디서 볼 수 있을까요?</h3>
+        
+        <img src="현무암 생성과정 아이콘/basalt_icon.png" width="268" height="268" alt="현무암 이미지">
+        
+        <p>
+            <span class="point-color">현무암</span>은 과거 화산 활동의 흔적을 보여주는 암석으로,<br>
+            화산섬이나 해양 지각 지역 등 <span class="point-color">마그마가 분출했던 곳에서 주로 발견</span>됩니다.<br>
+            이러한 지역은 검은색 다공성 바위와 주상절리 같은 독특한 지형을 형성합니다.
+        </p>
+    </section>
+<br><br><br>
+<section class="spot-section">
+    <h2>현무암 명소</h2>
+    <h3>대표적인 현무암 지형을 확인해볼까요?</h3>    
+<table>
+    <tr>
+        <th>제주도<br>주상절리</th>
+        <th>아이슬란드<br>용암평원</th>
+        <th>하와이<br>빅아일랜드</th>
+    </tr>
+    <tr>
+        <td><img src="jeju.png" alt="제주도 주상절리"></td>
+        <td><img src="iceland.png" alt="아이슬란드 용암평원"></td>
+        <td><img src="hawaii.png" alt="하와이 빅아일랜드"></td>
+    </tr>
+    <tr>
+        <td>바다의 장업한 기둥 모양의 현무암 절벽</td>
+        <td>용암이 식어 형성된 광활한 평원</td>
+        <td>화산 활동으로 생성된 검은 해변</td>
+    </tr>
+    </table>
+
+</section>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <img src="basalt_image.png" alt="Basalt rock" class="footer-icon">
+    <nav class="footer-nav">
+      <a href="origin.html">Origin</a>
+      <a href="sites.html">Sites</a>
+      <a href="use.html">Use</a>
+      <a href="future.html">Future</a>
+      <a href="basalt-code.html">Basalt code</a>
+    </nav>
+    <p class="footer-copy">© 2025 Basalt. All rights reserved</p>
+  </div>
+</footer>
+
+</body>
+</html>

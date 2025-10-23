@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basalt</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .header {
+      width: 100%;
+      background-color: #fff;
+      color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 40px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    .logo img {
+      height: 20px;
+      width: auto;
+      display: block;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #000;
+      margin-left: 30px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .main-section {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .image-placeholder {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      cursor: pointer; 
+    }
+
+    .image-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .footer {
+      background-color: #d9d9d9;
+      color: #000;
+      text-align: center;
+      padding: 40px 0 20px;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-icon {
+      width: 70px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+
+    .footer-nav {
+      margin-bottom: 15px;
+    }
+
+    .footer-nav a {
+      text-decoration: none;
+      color: #000;
+      margin: 0 20px;
+      font-size: 14px;
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: #555;
+      margin-top: 10px;
+      border-top: 1px solid #bbb;
+      display: inline-block;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="Basalt_logo.png" alt="Basalt logo" />
+    </div>
+
+    <nav class="nav">
+      <a href="origin.html">Origin</a>
+      <a href="sites.html">Sites</a>
+      <a href="use.html">Use</a>
+      <a href="future.html">Future</a>
+      <a href="basalt-code.html">Basalt code</a>
+    </nav>
+  </header>
+
+  <main class="main-section">
+    <a href="origin.html" class="image-placeholder">
+      <img src="intro_fullscr.svg" alt="Intro background" />
+    </a>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <img src="basalt_image.png" alt="Basalt rock" class="footer-icon" />
+
+      <nav class="footer-nav">
+        <a href="origin.html">Origin</a>
+        <a href="sites.html">Sites</a>
+        <a href="use.html">Use</a>
+        <a href="future.html">Future</a>
+        <a href="basalt-code.html">Basalt code</a>
+      </nav>
+
+      <p class="footer-copy">©2025 Basalt, All rights reserved</p>
+    </div>
+  </footer>
+</body>
+</html>
