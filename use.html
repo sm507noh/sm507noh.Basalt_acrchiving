@@ -6,75 +6,70 @@
 <title>Basalt</title>
 <style>
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 body {
-  background-color: #000;
-  color: #fff;
-  line-height: 1.6;
-  text-align: center;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
 }
 
 .header {
-  width: 100%;
-  background-color: #fff;
-  color: #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 40px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 .header .logo img {
-  height: 20px;
-  width: auto;
-  display: block;
+    height: 20px;
+    width: auto;
+    display: block;
 }
 
 .header nav a {
-  color: #000;
-  text-decoration: none;
-  margin-left: 30px;
-  font-size: 14px;
-  font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .content-section {
-  padding-top: 100px;
-  width: 90%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding-bottom: 150px;
+    padding-top: 180px;
 }
-
 .content-section > h2:first-of-type {
-    padding-top: 100px; 
+    padding-top: 0;
 }
 
 .content-section h2 {
-  font-size: 48px;
-  font-weight: 800;
-  margin-top: 0; 
-  margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 800;
+    margin-top: 0; 
+    margin-bottom: 20px;
 }
 
 .content-section h3 {
-  font-size: 28px;
-  font-weight: 500;
-  margin-bottom: 50px;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 50px;
 }
 
 .point-color {
-  color: #91CAFF;
-  font-weight: 600;
+    color: #91CAFF;
+    font-weight: 600;
 }
 
 .use-intro img {
@@ -100,16 +95,17 @@ hr {
 
 .card-grid {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column; /* 카드를 세로로 정렬하여 한 줄에 하나씩 오도록 조정 */
     gap: 30px;
     justify-content: center;
+    align-items: center; /* 카드가 중앙에 오도록 추가 */
 }
 
+/* 카드 사이즈를 600x800으로 변경 */
 .use-card {
-    width: calc(50% - 15px); 
+    width: 600px; /* 600px로 변경 */
+    height: 800px; /* 800px로 변경 */
     min-width: 350px;
-    height: 6
-  500px;
     background-color: #1a1a1a;
     border: 1px solid #333;
     padding: 30px;
@@ -122,84 +118,85 @@ hr {
 }
 
 .card-header h4 {
-    font-size: 20px;
+    font-size: 24px; /* 폰트 크기 약간 증가 (선택 사항) */
     font-weight: 700;
     margin-bottom: 5px;
 }
 
 .card-header span {
-    font-size: 14px;
+    font-size: 16px; /* 폰트 크기 약간 증가 (선택 사항) */
     color: #91CAFF;
     font-weight: 500;
 }
 
+/* 카드 크기에 맞춰 이미지 높이 증가 */
 .card-image {
     width: 100%;
-    height: 230px; 
+    height: 450px; /* 높이 조정 */
     object-fit: cover; 
     border-radius: 8px;
-    margin-bottom: 25px;
+    margin-bottom: 35px; /* 마진 증가 */
 }
 
 .card-description {
-    font-size: 14px;
+    font-size: 16px; /* 폰트 크기 약간 증가 (선택 사항) */
     line-height: 1.6;
     color: #ccc;
     text-align: left;
 }
 
 .footer {
-  background-color: #d9d9d9;
-  color: #000;
-  text-align: center;
-  padding: 40px 0 20px;
+    background-color: #d9d9d9;
+    color: #000;
+    text-align: center;
+    padding: 40px 0 20px;
 }
 
 .footer-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-icon {
-  width: 70px;
-  height: 80px;
-  object-fit: contain;
-  margin-bottom: 20px;
+    width: 70px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 20px;
 }
 
 .footer-nav a {
-  color: #000;
-  text-decoration: none;
-  margin: 0 20px;
-  font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 14px;
 }
 
 .footer-copy {
-  font-size: 12px;
-  color: #555;
-  margin-top: 10px;
-  border-top: 1px solid #bbb;
-  display: inline-block;
-  padding-top: 10px;
+    font-size: 12px;
+    color: #555;
+    margin-top: 10px;
+    border-top: 1px solid #bbb;
+    display: inline-block;
+    padding-top: 10px;
 }
 </style>
 </head>
 <body>
 
 <header class="header">
-  <div class="logo">
-    <a href="index.html">
-      <img src="Basalt_logo.png" alt="Basalt logo">
-    </a>
-  </div>
-  <nav>
-    <a href="origin.html">Origin</a>
-    <a href="sites.html">Sites</a>
-    <a href="use.html">Use</a>
-    <a href="future.html">Future</a>
-    <a href="basalt-code.html">Basalt code</a>
-  </nav>
+    <div class="logo">
+        <a href="index.html">
+            <img src="Basalt_logo.png" alt="Basalt logo">
+        </a>
+    </div>
+    <nav>
+        <a href="origin.html">Origin</a>
+        <a href="sites.html">Sites</a>
+        <a href="use.html">Use</a>
+        <a href="future.html">Future</a>
+        <a href="basalt-code.html">Basalt code</a>
+    </nav>
 </header>
 
 <div class="content-section">
@@ -212,13 +209,13 @@ hr {
         <p>
             돌 도구는 인류 문명의 초기부터 현재까지 다양한 용도로 사용되어 왔습니다.<br>
             현무암은 뛰어난 내구성을 지니며,<br>
-            인류는 돌도끼부터 다양한 건축물에 이르기까지 이 돌을 소중히 사용해 왔습니다.<br>
-            그 쓰임은 우리의 기본이 되는 건축에서부터 예술과 공예 분야까지 이어집니다.
+            <span class="point-color">인류는 돌도끼부터 다양한 건축물</span>에 이르기까지 이 돌을 소중히 사용해 왔습니다.<br>
+            그 쓰임은 우리의 기본이 되는 <span class="point-color">건축에서부터 예술과 공예 분야</span>까지 이어집니다.
         </p>
     </section>
 <br><br><br><br>
     <hr> <section class="use-cases">
-<br><br><br><br>       
+<br><br><br><br> 	 
         <div class="card-grid">
             
             <div class="use-card">
@@ -279,17 +276,17 @@ hr {
 </div>
 
 <footer class="footer">
-  <div class="footer-inner">
-    <img src="basalt_image.png" alt="Basalt rock" class="footer-icon">
-    <nav class="footer-nav">
-      <a href="origin.html">Origin</a>
-      <a href="sites.html">Sites</a>
-      <a href="use.html">Use</a>
-      <a href="future.html">Future</a>
-      <a href="basalt-code.html">Basalt code</a>
-    </nav>
-    <p class="footer-copy">© 2025 Basalt. All rights reserved</p>
-  </div>
+    <div class="footer-inner">
+        <img src="basalt_image.png" alt="Basalt rock" class="footer-icon">
+        <nav class="footer-nav">
+            <a href="origin.html">Origin</a>
+            <a href="sites.html">Sites</a>
+            <a href="use.html">Use</a>
+            <a href="future.html">Future</a>
+            <a href="basalt-code.html">Basalt code</a>
+        </nav>
+        <p class="footer-copy">© 2025 Basalt. All rights reserved</p>
+    </div>
 </footer>
 
 </body>
