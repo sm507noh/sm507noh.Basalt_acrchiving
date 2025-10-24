@@ -4,14 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Basalt</title>
-   <link rel="styleseet"href="style.css">
+<link rel="stylesheet" href="style.css">
 <style>
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -22,19 +21,18 @@ body {
 }
 
 .header {
-      width: 100%;
-      background-color: #fff;
-      color: #000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 10;
-    }
-
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
 
 .header .logo img {
   height: 20px;
@@ -48,25 +46,28 @@ body {
   margin-left: 30px;
   font-size: 20px;
   font-weight: 500;
+  transition: font-weight 0.3s;
 }
+
+.header nav a.active {
+  font-weight: 800;
+  border-bottom: 2px solid #000;
+}
+
+.header nav a:hover {
+  font-weight: 700;
+}
+
 .content-section {
-  padding-top: 100px; 
+  padding-top: 180px;
   width: 90%; 
   max-width: 900px;
   margin: 0 auto;
 }
 
-.content-section {
-  padding-top: 180px;
-}
-.content-section > h2:first-of-type {
-  padding-top: 0;
-}
-
 .content-section h2 {
   font-size: 48px;
   font-weight: 800;
-  margin-top: 0; 
   margin-bottom: 20px;
 }
 
@@ -74,11 +75,6 @@ body {
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 20px;
-}
-
-.content-section h3:nth-of-type(1) {
-    font-size: 28px; 
-    margin-bottom: 50px;
 }
 
 .point-color {
@@ -92,19 +88,19 @@ body {
 }
 
 .content-section p {
-    font-size: 16px;
-    margin-bottom: 120px;
-    text-align: center;
+  font-size: 16px;
+  margin-bottom: 120px;
+  text-align: center;
 }
 
 .classification-heading h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .classification-heading h3 {
-    font-size: 20px; 
-    font-weight: 400;
-    margin-bottom: 60px;
+  font-size: 20px; 
+  font-weight: 400;
+  margin-bottom: 60px;
 }
 
 .content-section table {
@@ -135,29 +131,29 @@ body {
 }
 
 .process-heading h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .process-heading h3 {
-    font-size: 20px; 
-    font-weight: 400;
-    margin-bottom: 80px;
+  font-size: 20px; 
+  font-weight: 400;
+  margin-bottom: 80px;
 }
 
 .full-width-image-container {
-    width: 100vw; 
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw; 
-    margin-right: -50vw; 
-    margin-bottom: 150px; 
+  width: 100vw; 
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw; 
+  margin-right: -50vw; 
+  margin-bottom: 150px; 
 }
 
 .full-width-image-container img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .footer {
@@ -201,11 +197,10 @@ body {
 
 <header class="header">
   <div class="logo">
-    <a href="index.html"> <img src="Basalt_logo.png" alt="Basalt logo">
-    </a>
+    <a href="index.html"> <img src="Basalt_logo.png" alt="Basalt logo"></a>
   </div>
   <nav>
-    <a href="origin.html">Origin</a>
+    <a href="origin.html" class="active">Origin</a>
     <a href="sites.html">Sites</a>
     <a href="use.html">Use</a>
     <a href="future.html">Future</a>
@@ -214,59 +209,59 @@ body {
 </header>
 
 <div class="content-section">
-    <h2>5억년의 기록</h2>
-    <h3>화산의 기록, 현무암이란 무엇일까요?</h3>
-    <img src="basalt_icon.png" width="268" height="268" alt="현무암 이미지">
-    <p><span class="point-color">현무암(Basalt)</span>은 마그마가 빠르게 식어 만들어진 <span class="point-color">화성암</span>으로,<br>
-        검은색 또는 회색을 띠며, 지구 표면 곳곳에서 발견됩니다.</p>
-<br><br><br>
-    <div class="classification-heading">
-        <h2>화성암의 분류</h2>
-        <h3>식는 자리로 구분되는 돌</h3>
-    </div>
-    <table>
+  <h2>5억년의 기록</h2>
+  <h3>화산의 기록, 현무암이란 무엇일까요?</h3>
+  <img src="basalt_icon.png" width="268" height="268" alt="현무암 이미지">
+  <p><span class="point-color">현무암(Basalt)</span>은 마그마가 빠르게 식어 만들어진 <span class="point-color">화성암</span>으로,<br>
+  검은색 또는 회색을 띠며, 지구 표면 곳곳에서 발견됩니다.</p>
+
+  <div class="classification-heading">
+    <h2>화성암의 분류</h2>
+    <h3>식는 자리로 구분되는 돌</h3>
+  </div>
+
+  <table>
     <tr>
-        <th>구분 기준</th>
-        <th>심성암</th>
-        <th>반심성암</th>
-        <th><span class="point-color">화산암</span></th>
+      <th>구분 기준</th>
+      <th>심성암</th>
+      <th>반심성암</th>
+      <th><span class="point-color">화산암</span></th>
     </tr>
     <tr>
-        <td>냉각 위치</td>
-        <td>지하 깊은 곳</td>
-        <td>지표면 근처</td>
-        <td><span class="point-color">지표면 또는 해저</span></td>
+      <td>냉각 위치</td>
+      <td>지하 깊은 곳</td>
+      <td>지표면 근처</td>
+      <td><span class="point-color">지표면 또는 해저</span></td>
     </tr>
     <tr>
-        <td>냉각 속도</td>
-        <td>매우 느림</td>
-        <td>느림</td>
-        <td><span class="point-color">매우 빠름</span></td>
+      <td>냉각 속도</td>
+      <td>매우 느림</td>
+      <td>느림</td>
+      <td><span class="point-color">매우 빠름</span></td>
     </tr>
     <tr>
-        <td>대표 암석</td>
-        <td>화강암</td>
-        <td>섬록암</td>
-        <td><span class="point-color">현무암</span></td>
+      <td>대표 암석</td>
+      <td>화강암</td>
+      <td>섬록암</td>
+      <td><span class="point-color">현무암</span></td>
     </tr>
-    </table>
-<br><br><br>
-    <div class="process-heading">
-        <h2>현무암의 생성과정</h2>
-        <h3>땅속에서 표면으로</h3>
-    </div>
-    
-    <div class="full-width-image-container">
-        <img src="timeline.png" alt="현무암 생성과정 타임라인 이미지">
-    </div>
-    
+  </table>
+
+  <div class="process-heading">
+    <h2>현무암의 생성과정</h2>
+    <h3>땅속에서 표면으로</h3>
+  </div>
+  
+  <div class="full-width-image-container">
+    <img src="timeline.png" alt="현무암 생성과정 타임라인 이미지">
+  </div>
 </div>
 
 <footer class="footer">
   <div class="footer-inner">
     <img src="basalt_image.png" alt="Basalt rock" class="footer-icon">
     <nav class="footer-nav">
-      <a href="origin.html">Origin</a>
+      <a href="origin.html" class="active">Origin</a>
       <a href="sites.html">Sites</a>
       <a href="use.html">Use</a>
       <a href="future.html">Future</a>
@@ -277,7 +272,6 @@ body {
 </footer>
 
 </body>
-
 </html>
 
 
